@@ -1,0 +1,23 @@
+.site-header {
+  padding: 73px 0;
+}
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@include breakpoint-down (768) {
+  .site-header {
+    padding: 40px 0;
+  }
+}
+@include breakpoint-down (600) {
+  .site-header {
+    padding: 25px 0;
+  }
+}
+@include breakpoint-down (320) {
+  .site-header__container {
+    flex-direction: column;
+  }
+}

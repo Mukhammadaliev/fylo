@@ -1,0 +1,23 @@
+.logo {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 176px;
+}
+.logo-img {
+  display: inline-block;
+  vertical-align: middle;
+}
+@include breakpoint-down (600) {
+  .logo-header {
+    width: 80px;
+  }
+  .footer--logo {
+    width: 160px;
+  }
+}
+@include breakpoint-down (320) {
+  .logo-header {
+    width: 140px;
+    margin-bottom: 10px;
+  }
+}

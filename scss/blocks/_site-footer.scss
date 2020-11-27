@@ -1,0 +1,133 @@
+.site-footer {
+  padding: 75px 0 90px;
+  background-color: #0B1524;
+}
+.site-footer__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+.site-footer__item {
+  margin: 0 20px;
+  margin-bottom: 60px;
+}
+.footer-card--first {
+  max-width: 380px;
+}
+.footer-card--tel {
+  display: flex;
+  flex-direction: column;
+}
+.footer-card__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  display: flex;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 18px;
+    background-image: url("../img/place-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-right: 15px;
+    flex-shrink: 0;
+    transform: translateY(3px);
+  }
+}
+.footer--logo {
+  margin-bottom: 30px;
+}
+.footer-card__phone {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/phone-in-talk.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+}
+.footer-card__email {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+}
+
+.submenu__item {
+  margin-bottom: 17px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.submenu__item-link {
+  font-size: 16px;
+  line-height: 22px;
+  display: inline-block;
+  color: #FFFFFF;
+}
+.social {
+  display: flex;
+}
+.social__item {
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.social__item-link {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.social__img {
+  display: inline-block;
+  vertical-align: middle;
+}
+@include breakpoint-down (852) {
+  .site-footer__list {
+    justify-content: space-around;
+  }
+  .site-footer {
+    padding: 40px 0 60px;
+  }
+}
+@include breakpoint-down (440) {
+  .site-footer__list {
+    flex-direction: column;
+  }
+  .footer-card--first {
+    margin-bottom: 20px;
+  }
+  .social {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,27 @@
+.navbar__list {
+  display: flex;
+  align-items: center;
+}
+.navbar__item {
+  margin-right: 57px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.navbar__item-link {
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: inline-block;
+  color: #fff;
+}
+@include breakpoint-down (600) {
+  .navbar__item-link {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .navbar__item {
+    margin-right: 25px;
+  }
+}
