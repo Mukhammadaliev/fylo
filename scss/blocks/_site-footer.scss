@@ -94,6 +94,9 @@
   line-height: 22px;
   display: inline-block;
   color: #FFFFFF;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 .social {
   display: flex;
@@ -107,6 +110,9 @@
 .social__item-link {
   display: inline-block;
   vertical-align: baseline;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 .social__img {
   display: inline-block;

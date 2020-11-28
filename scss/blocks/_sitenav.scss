@@ -15,6 +15,9 @@
   line-height: 19px;
   display: inline-block;
   color: #fff;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 @include breakpoint-down (600) {
   .navbar__item-link {

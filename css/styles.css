@@ -501,6 +501,10 @@ img {
   color: #fff;
 }
 
+.navbar__item-link:hover {
+  opacity: 0.7;
+}
+
 @media only screen and (max-width: 600px) {
   .navbar__item-link {
     font-size: 12px;
@@ -1258,6 +1262,10 @@ img {
   color: #FFFFFF;
 }
 
+.submenu__item-link:hover {
+  opacity: 0.7;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1275,6 +1283,10 @@ img {
 .social__item-link {
   display: inline-block;
   vertical-align: baseline;
+}
+
+.social__item-link:hover {
+  opacity: 0.7;
 }
 
 .social__img {
